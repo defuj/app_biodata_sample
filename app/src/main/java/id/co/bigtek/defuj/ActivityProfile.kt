@@ -25,6 +25,11 @@ class ActivityProfile : AppCompatActivity() {
         back()
     }
 
+    override fun onResume() {
+        super.onResume()
+        count = 1
+    }
+
     private fun back(){
         if(count == 0){
             finish()
